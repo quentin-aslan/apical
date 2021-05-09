@@ -80,10 +80,10 @@
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
               <h3>
-                Présentation de l'entreprise :
+                À propos de nous
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Les arboristes d'Apical sont formés, équipés et assurés pour la parfaite exécution de tous types d'abattage délicat.
               </p>
               <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus <i class="bx bx-chevron-right"></i></a>
             </div>
@@ -134,22 +134,34 @@
             FIXME : Je pense que créer des boutons est la meilleure solution (Qui ouvre des modals ??) Ce serais plus simple à gerer nn ?
 -->
 
+        <h4>On utilise quoi pour les services ?
+          <br> - Bouton
+          <br> - Courte présentation avec bouton
+          <br> - Le truc du portfolio qui permet de switcher sans modal
+        </h4>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
+        </div>
 
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
+        </div>
+      </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceTaille" href="#modalServiceTaille">Taille</a></h4>
-              <p class="description">
-                Présentation en une ligne
-              </p>
-            </div>
-          </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Démontage</a></h4>
+              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceDemontage">Démontage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -159,7 +171,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Essouchage / Dessouchage</a></h4>
+              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceEssouchage">Essouchage / Dessouchage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -169,7 +181,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Evacuation / Broyage</a></h4>
+              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceEvacuation">Evacuation / Broyage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -181,7 +193,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Soins aux arbres</a></h4>
+              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceSoins">Soins aux arbres</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -326,7 +338,7 @@
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
-          </div
+          </div>
 
         </div>
 
@@ -515,28 +527,28 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Votre nom doit contenir au moins 4 caractères" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="L'email doit être valide" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="L'objet doit contenir au moins 8 caractères" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Le message ne doit pas être vide" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Chargement</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Votre message a été envoyé, merci !</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Envoyer</button></div>
             </form>
           </div>
 
@@ -623,51 +635,49 @@
         </div>
         <div class="modal-body">
           <p>
-            <p>
-              L'entreprise Apical à été créée en 2003. Mon père, entrepreneur de travaux forestier en bretagne a su me transmettre l'amour du métier.
-              J'ai par la suite développé un fort interêt pour les arbres, alors que j'intervenais à ses côtés sur des chantiers d'élagage, d'abattage ou forestier.
-            </p>
+            L'entreprise Apical à été créée en 2003. Mon père, entrepreneur de travaux forestier en bretagne a su me transmettre l'amour du métier.
+            J'ai par la suite développé un fort interêt pour les arbres, alors que j'intervenais à ses côtés sur des chantiers d'élagage, d'abattage ou forestier.
+          </p>
 
-            <p>
-              Depuis plusieurs années, je participe à la formation professionnelle de futurs arboristes en les recevants en alternance avec les centres de formation de Nérac et Auterive qui dispensent le certificat de spécialisation "taille et soins aux arbres".
-              Ce certificat est délivré par le ministère de l'agriculture et reconnu au plan national, je l'ai moi même obtenu.
-            </p>
+          <p>
+            Depuis plusieurs années, je participe à la formation professionnelle de futurs arboristes en les recevants en alternance avec les centres de formation de Nérac et Auterive qui dispensent le certificat de spécialisation "taille et soins aux arbres".
+            Ce certificat est délivré par le ministère de l'agriculture et reconnu au plan national, je l'ai moi même obtenu.
+          </p>
 
-            <p>
-              Une philosophie de partage de compétences et de connaissances anime notre équipe, nous sommes actuellement 4 grimpeurs diplômés d'état chevronnés, en contrat à durée indeterminée, et notre effectif peut atteindre 10 personnes par le biais de la co-traitance, en relation avec des entreprises certifiées.
-            </p>
+          <p>
+            Une philosophie de partage de compétences et de connaissances anime notre équipe, nous sommes actuellement 4 grimpeurs diplômés d'état chevronnés, en contrat à durée indeterminée, et notre effectif peut atteindre 10 personnes par le biais de la co-traitance, en relation avec des entreprises certifiées.
+          </p>
 
-            <p>
-              <em><strong>
-                Le métier d'arboriste grimpeur s'apprend essentiellement par la pratique.
-                Les techniques de travail peuvent être dangereuses si elles sont pratiquées par des personnes peu ou mal formées.
-              </strong></em>
-            </p>
+          <p>
+            <em><strong>
+              Le métier d'arboriste grimpeur s'apprend essentiellement par la pratique.
+              Les techniques de travail peuvent être dangereuses si elles sont pratiquées par des personnes peu ou mal formées.
+            </strong></em>
+          </p>
 
-            <p>
-              Les travaux de taille ou d'abattage par démontage des arbres nécéssitent une aptitude physique, la maitrise technique du grimpeur et du déplacement dans la couronne des arbres, des compétences précises pour la réalisation du geste de taille ou d'abattage et des connaissances récentes sur la biologie, la physiologie et la pathologie des arbres. Lors de son travail, l'arboriste grimpeur doit surtout connaître et respecter les règles de sécurité tant en ce qui concerne le materiel et son entretien que sur les gestes et techniques mis en ouevre dans l'arbre, ou au sol.
-              Nous sommes également formé au secours dans l'arbre, afin de porter secours ou assistance à un blessé.
-            </p>
+          <p>
+            Les travaux de taille ou d'abattage par démontage des arbres nécéssitent une aptitude physique, la maitrise technique du grimpeur et du déplacement dans la couronne des arbres, des compétences précises pour la réalisation du geste de taille ou d'abattage et des connaissances récentes sur la biologie, la physiologie et la pathologie des arbres. Lors de son travail, l'arboriste grimpeur doit surtout connaître et respecter les règles de sécurité tant en ce qui concerne le materiel et son entretien que sur les gestes et techniques mis en ouevre dans l'arbre, ou au sol.
+            Nous sommes également formé au secours dans l'arbre, afin de porter secours ou assistance à un blessé.
+          </p>
 
-            <p>
-              Décider de cohabiter avec des arbres c'est décider de respecter leur identité biologique pour qu'ils puissent vivre en bonne santé, et donc longtemps, malgrès les contraintes qu'on leur impose.
-              C'est aussi savoir à partir de quel niveau de contrainte la vie des arbres n'est plus compatible avec la vie des hommes.
-              La taille est nécéssaire lorsqu'il s'agit d'adapter la forme de l'arbre aux objectifs et contraintes imposés par l'homme.
-              <br>
-              Cependant, elle ne constitue qu'un élément de réponse dans un ensemble de dispositions devant permettre une meilleure adaptation de l'arbre à son milieu.
-              <br>
-              La taille ne doit pas être systématique, elle doit résulter d'une démarche méthodique.
-            </p>
+          <p>
+            Décider de cohabiter avec des arbres c'est décider de respecter leur identité biologique pour qu'ils puissent vivre en bonne santé, et donc longtemps, malgrès les contraintes qu'on leur impose.
+            C'est aussi savoir à partir de quel niveau de contrainte la vie des arbres n'est plus compatible avec la vie des hommes.
+            La taille est nécéssaire lorsqu'il s'agit d'adapter la forme de l'arbre aux objectifs et contraintes imposés par l'homme.
+            <br>
+            Cependant, elle ne constitue qu'un élément de réponse dans un ensemble de dispositions devant permettre une meilleure adaptation de l'arbre à son milieu.
+            <br>
+            La taille ne doit pas être systématique, elle doit résulter d'une démarche méthodique.
+          </p>
 
-            <p>
-              La taille raisonnée est dédiée à l'application des mesures et des règles de taille nécéssaire et acceptable pour l'arbre.
-              Un diagnostic précis de l'état sanitaire et physiologique déterminera l'interêt de l'action à réaliser.
-            </p>
+          <p>
+            La taille raisonnée est dédiée à l'application des mesures et des règles de taille nécéssaire et acceptable pour l'arbre.
+            Un diagnostic précis de l'état sanitaire et physiologique déterminera l'interêt de l'action à réaliser.
+          </p>
 
-            <p>
-              L'entreprise Apical à su se doter au fil des ans, de matériel très sophistiqué et à la pointe en matière de confort et de sécurité au travail.
-              Spécialisée dans l'abattage par démontage des grands arbres et en taille et soins de l'arbre, confirmé dans ces deux domaines, elle vous propose son savoir faire et ses compétences dans toute la région.
-            </p>
+          <p>
+            L'entreprise Apical à su se doter au fil des ans, de matériel très sophistiqué et à la pointe en matière de confort et de sécurité au travail.
+            Spécialisée dans l'abattage par démontage des grands arbres et en taille et soins de l'arbre, confirmé dans ces deux domaines, elle vous propose son savoir faire et ses compétences dans toute la région.
           </p>
         </div>
         <div class="modal-footer">
@@ -688,79 +698,237 @@
           </button>
         </div>
         <div class="modal-body">
+          <h3>Périodes de tailles</h3>
           <p>
+            Ces interventions sont possibles toute l'année sauf :
+          <ul>
+            <li>En période de montée de sève jusqu'au stade adulte des premières feuilles de débourrement,</li>
+            <li>En descente de sève de la transformation des rameaux verts de l'année en bois à la semaine suivante, la chute totale des feuilles l'âoutement</li>
+            <li>En période de gel, en dessous de -5°c.</li>
+          </ul>
 
-            <h3>Périodes de tailles</h3>
-            <p>
-              Ces interventions sont possibles toute l'année sauf :
-            <ul>
-              <li>En période de montée de sève jusqu'au stade adulte des premières feuilles de débourrement,</li>
-              <li>En descente de sève de la transformation des rameaux verts de l'année en bois à la semaine suivante, la chute totale des feuilles l'âoutement</li>
-              <li>En période de gel, en dessous de -5°c.</li>
-            </ul>
-
-            <p>
-              <strong>En vert ou en Hiver ?</strong>
-            </p>
-
-            <p>
-              En vert (fin du printemps, début de l'été) les arbres sont en pleine activité physiologique porté sur la croissance et accusent parfaitement certaines tailles, formations, architecturée , bois mort, douce...
-              Il est impératif d'obsérver des règles phytosanitaires notament la désinfection des outils de tailles entre chaque arbre...
-            </p>
-
-            <p>
-              En Août il commence à être trop tard pour intervenir, car les arbres ont besoin d'une activité photosynthétique maximum afin de constituer leurs réserves hivernales.
-            </p>
-
-            <p>
-              En hiver, la taille en sec porte sur des tailles d'adaptation, architecturée, de recalibrage, de bois mort et supporte des diamètres de coupe un peu plus important qu'en vert.
-            </p>
-
-            <p>Il est dit que la compartimentation des plaies de taille intervient sous 4 jours en période végétative, contre 30 à 40 jours en période de dormance.</p>
-
-            <p>La charte de l'arbre, rédigée par le SFA est un outil à utiliser.</p>
-
-            <p>
-              <em><strong>"De Bûcheron, on est passé à grimpeur élagueur, puis à arboriste grimpeur élagueur."</strong></em>
-            </p>
-            </p>
-
-            <h3>La Taille en détail</h3>
-
-            <strong>Taille de formation :</strong>
-            <p>Elle accompagne l'arbre les premières années de sa vie, elle maintient et limite le volume de la courronne, élimine les éventuels foyers d'infection, résoud les problèmes d'écorce incluse. Elle permet d'établir une forme prédéterminée.</p>
-
-            <strong>Taille d'entretien :</strong>
-            <p>Elle n'échange pas la silhouette de l'arbre, maintient sa forme. La taille de recalibrage permet de maintenir une forme, par exemple, une forme architecturée en tête de chat, un gabarit.</p>
-
-            <strong>Taille d'adaptation :</strong>
-            <p>Pour aposter une forme.</p>
-
-            <strong>Taille de conversion :</strong>
-            <p>Pour changer la forme.</p>
-
-            <strong>Taille de restructuration :</strong>
-            <p>Pour restaurer une forme.</p>
-
-            <h3>Pourquoi tailler</h3>
-
-            <p>
-              On taille pour s'adapter aux réseaux ou au voisinage, pour éviter des chutes de bois mort, pour effectuer une taille architecturée. Les rabattre les rends tous semblables c'est une dégradation du paysage.
-            </p>
-
-            <h3>Les mauvaises raisons conduisant à un élagage abusif :</h3>
-            <p>
-              Eviter la chute des feuilles, ou pour un risque de chute alors que l'arbre est saint, croire qu'on va le rajeunir, les querelles de voisinage, les désagréments (pollën, miellat, feuille, fruit, etc...
-            </p>
-
-            <p>
-              <em><strong>"Lutter contre les idées reçues, c'est aussi se professionnaliser."</strong></em>
-            </p>
-
-            <h3>
-              ICI METTRE PHOTOS
-            </h3>
+          <p>
+            <strong>En vert ou en Hiver ?</strong>
           </p>
+
+          <p>
+            En vert (fin du printemps, début de l'été) les arbres sont en pleine activité physiologique porté sur la croissance et accusent parfaitement certaines tailles, formations, architecturée , bois mort, douce...
+            Il est impératif d'obsérver des règles phytosanitaires notament la désinfection des outils de tailles entre chaque arbre...
+          </p>
+
+          <p>
+            En Août il commence à être trop tard pour intervenir, car les arbres ont besoin d'une activité photosynthétique maximum afin de constituer leurs réserves hivernales.
+          </p>
+
+          <p>
+            En hiver, la taille en sec porte sur des tailles d'adaptation, architecturée, de recalibrage, de bois mort et supporte des diamètres de coupe un peu plus important qu'en vert.
+          </p>
+
+          <p>Il est dit que la compartimentation des plaies de taille intervient sous 4 jours en période végétative, contre 30 à 40 jours en période de dormance.</p>
+
+          <p>La charte de l'arbre, rédigée par le SFA est un outil à utiliser.</p>
+
+          <p>
+            <em><strong>"De Bûcheron, on est passé à grimpeur élagueur, puis à arboriste grimpeur élagueur."</strong></em>
+          </p>
+          </p>
+
+          <h3>La Taille en détail</h3>
+
+          <strong>Taille de formation :</strong>
+          <p>Elle accompagne l'arbre les premières années de sa vie, elle maintient et limite le volume de la courronne, élimine les éventuels foyers d'infection, résoud les problèmes d'écorce incluse. Elle permet d'établir une forme prédéterminée.</p>
+
+          <strong>Taille d'entretien :</strong>
+          <p>Elle n'échange pas la silhouette de l'arbre, maintient sa forme. La taille de recalibrage permet de maintenir une forme, par exemple, une forme architecturée en tête de chat, un gabarit.</p>
+
+          <strong>Taille d'adaptation :</strong>
+          <p>Pour aposter une forme.</p>
+
+          <strong>Taille de conversion :</strong>
+          <p>Pour changer la forme.</p>
+
+          <strong>Taille de restructuration :</strong>
+          <p>Pour restaurer une forme.</p>
+
+          <h3>Pourquoi tailler</h3>
+
+          <p>
+            On taille pour s'adapter aux réseaux ou au voisinage, pour éviter des chutes de bois mort, pour effectuer une taille architecturée. Les rabattre les rends tous semblables c'est une dégradation du paysage.
+          </p>
+
+          <h3>Les mauvaises raisons conduisant à un élagage abusif :</h3>
+          <p>
+            Eviter la chute des feuilles, ou pour un risque de chute alors que l'arbre est saint, croire qu'on va le rajeunir, les querelles de voisinage, les désagréments (pollën, miellat, feuille, fruit, etc...
+          </p>
+
+          <p>
+            <em><strong>"Lutter contre les idées reçues, c'est aussi se professionnaliser."</strong></em>
+          </p>
+
+          <h3>
+            ICI METTRE PHOTOS
+          </h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SERVICE - DÉMONTAGE -->
+  <div id="modalServiceDemontage" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Service - Démontage</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorsque l'abattage d'un arbre ne peut se réaliser en direct, en raison de contraintes diverses, il faut faire appel a la technique du démontage de l'arbre.
+            Cette opération consiste a supprimer les branches les unes après les autres en commençant par les plus basses, et à couper le fût en tronçon.
+            Selon les contraintes du site, il faudra procéder avec ou sans système de rétention.
+          </p>
+
+          <p>
+            <em><strong>
+              Le démontage est un travail très particulier et dangereux, ici plus qu'ailleurs, la formation, l'experience et la réflexion sont indispensables.
+            </strong></em>
+          </p>
+
+          <p>
+            Pour réaliser un démontage, l'entente parfaite entre les opérateurs est un élément essentiel pour la réussite des opérations.
+            Pour faciliter les communications entre l'homme de pied et l'élagueur, nous utilisons des émetteurs/récepteurs.
+          </p>
+
+          <p>
+            Pour la réalisation de ce genre d'action, nous avons fréquemment recours a un outil appelé "le winch arboricole" qui permet de relever les charges sans risque de chutes ou secousses afin de les guider jusqu'au sol.
+          </p>
+
+          <p>
+            <h4>Tyrelienne</h4>
+            <small>Few photos</small>
+          </p>
+
+          <p>
+            <h4>Les étapes d'un démontage</h4>
+            <small>Few photos</small>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SERVICE - ESSOCUHAGE DESSOCUHAGE -->
+  <div id="modalServiceEssouchage" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Essouchage / Dessouchage</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Consécutif à l'enlèvement d'un arbre, il est parfois pour des raisons évidente indispensable de faire disparaître la souche, notamment lorsque l'arbre abattu occupe l'espace destiné à une construction future... (route, trottoire, piste cyclable ou simplement l'engazonnement...)
+          </p>
+
+          <p>
+            La souche, grignottée à -60cm de profondeur permet, suite à notre intervention, de replanter au même endroit un autre arbre.
+            <br>
+            Nous utilisons pour ce travail minutieux des machines qui ne causent aucun dégats à l'environnement de la souche à traiter, notamment une rogneuse montée sur chenilles rétractables, ce qui permet l'engagement dans des espaces réduits ainsi qu'accidentés (escalier, talus, bordure...).
+          </p>
+
+          <p>
+            La seconde est aussi efficace mais nécéssite plus de dégagement et des souches en nombres, c'est une carroteuse montée sur un tracteur qui extrait la souche en la détourant. La carotte évacuée laisse place à la future zone de plantation.
+          </p>
+
+          <p>
+            En suivant l'un de ces deux procédés, le système racinaire reste en place, les racines commence alors un processus de Biodégradation.
+          </p>
+
+          <p>
+            Few photos
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SERVICE - EVACUATION BROYAGE -->
+  <div id="modalServiceEvacuation" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Evacuation / Broyage</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Les travaux d'élagage ou le simple abattage produit un volume important à évacuer.
+            Nous prenons en charge le traitement et l'évacuation de tout volume, jusqu'à la gestion finale des déchets en compostière agrée.
+          </p>
+
+          <p>
+            Notre parc matériel comprend un broyeur à plaquettes de 90cv acceptant des branches et troncs jusqu'à 25cm de diamètre, ce qui permet de réduire par 7 les volumes apparent... Le poid, lui, ne varie malheuresement pas.
+          </p>
+
+          <p>
+            En partenariat, nous disposons aussi d'un gramier de 40t avec grue et grappin forestier, ou d'un ampiroll 19t grappin avec des bennes de 15 à 30m3.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SERVICE - SOINS AUX ARBRES -->
+  <div id="modalServiceSoins" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Soins aux arbres organique et mécanique</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            L'arbre est un être vivant de sol en cime, qui peu nécessité des soins, muni de tout un système organique vulnérable aux agressions extérieure, notamment en milieu urbain.
+          </p>
+
+          <p>
+            Stress hydrique, souterrains, compactage des sols, véhicules, pollution de l'air, de l'eau, blessures diverses...
+          </p>
+
+          <p>
+            Les arbres s'adaptent jusqu'au stade où l'intervention humaine devienne nécéssaire à la survie.
+          </p>
+
+          <p>
+            <strong>Les soins organiques</strong>, qui peuvent être dispensés sont l'apport de nutriments (stimulants racinaires) au sol. La pulvérisation de nutriments s'effectue par voie folliaire.
+            <br>
+            Les traitements phytosanitaires sont préventifs afin de favoriser les défenses naturelles de l'arbre, le décompactage du sol. L'oxygénation s'effectue avec de l'air comprimé basse pression.
+          </p>
+
+          <p>
+            Les soins mécaniques sont préventifs, il s'agit de prévenir l'arrachement des axes déportés, des écorces incluses sur des troncs codominants.
+          </p>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

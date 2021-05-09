@@ -552,7 +552,7 @@ section {
   margin-bottom: 30px;
 }
 
-.about .content .about-btn {
+.about-btn {
   display: inline-block;
   background: #67b0d1;
   padding: 6px 44px 8px 30px;
@@ -562,14 +562,14 @@ section {
   position: relative;
 }
 
-.about .content .about-btn i {
+.about-btn i {
   font-size: 18px;
   position: absolute;
   right: 18px;
   top: 9px;
 }
 
-.about .content .about-btn:hover {
+.about-btn:hover {
   background: #7bbad7;
 }
 

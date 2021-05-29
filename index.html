@@ -26,13 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Squadfree - v2.3.1
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -65,7 +58,7 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Bienvenue à Apical</h1>
-      <h2>Les arboristes d'Apical sont formés, équipés et assurés pour la parfaite exécution de tous types d'abattage délicat. </h2>
+      <h2>My attitude of mind makes unique things possible ... </h2>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -134,12 +127,12 @@
             FIXME : Je pense que créer des boutons est la meilleure solution (Qui ouvre des modals ??) Ce serais plus simple à gerer nn ?
 -->
 
-        <h4>On utilise quoi pour les services ?
+<!--        <h4>On utilise quoi pour les services ?
           <br> - Bouton
           <br> - Courte présentation avec bouton
           <br> - Le truc du portfolio qui permet de switcher sans modal
-        </h4>
-      <div class="row">
+        </h4>-->
+<!--      <div class="row">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
           <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
         </div>
@@ -155,33 +148,43 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
           <a data-toggle="modal" data-target="#modalAboutUs" class="about-btn">En savoir plus</a>
         </div>
-      </div>
+      </div>-->
         <div class="row">
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div data-toggle="modal" data-target="#modalServiceTaille" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceDemontage">Démontage</a></h4>
+              <h4 class="title"><a>Taille</a></h4>
+              <p class="description">
+                Présentation en une ligne + trouver un icon qui va bien ?
+              </p>
+            </div>
+          </div>
+
+          <div data-toggle="modal" data-target="#modalServiceDemontage" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a>Démontage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div data-toggle="modal" data-target="#modalServiceEssouchage" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceEssouchage">Essouchage / Dessouchage</a></h4>
+              <h4 class="title"><a>Essouchage / Dessouchage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div data-toggle="modal" data-target="#modalServiceEvacuation" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceEvacuation">Evacuation / Broyage</a></h4>
+              <h4 class="title"><a>Evacuation / Broyage</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -190,10 +193,10 @@
         </div>
 
         <div class="row mt-3">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div data-toggle="modal" data-target="#modalServiceSoins" class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a data-toggle="modal" data-target="#modalServiceSoins">Soins aux arbres</a></h4>
+              <h4 class="title"><a>Soins aux arbres</a></h4>
               <p class="description">
                 Présentation en une ligne
               </p>
@@ -203,147 +206,6 @@
 
       </div>
     </section><!-- End Services Section -->
-
-<!--    FIXME: ON LAISSE ???-->
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts  section-bg">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-<!--    FIXME: ON LAISSE ???-->
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-<!--    FIXME: ON LAISSE ??-->
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <h1>Salut salut</h1>
-            <p>Donc ici on décris le service ???</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -433,12 +295,12 @@
               <div class="member-info">
                 <h4>Arnaud Devemy</h4>
                 <span>Chef d'entreprise</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+<!--                <div class="social">-->
+<!--                  <a href=""><i class="icofont-twitter"></i></a>-->
+<!--                  <a href=""><i class="icofont-facebook"></i></a>-->
+<!--                  <a href=""><i class="icofont-instagram"></i></a>-->
+<!--                  <a href=""><i class="icofont-linkedin"></i></a>-->
+<!--                </div>-->
               </div>
             </div>
           </div>
@@ -449,12 +311,6 @@
               <div class="member-info">
                 <h4>Emilie</h4>
                 <span>Chef d'entreprise</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -465,12 +321,6 @@
               <div class="member-info">
                 <h4>xxxx</h4>
                 <span>Arboriste</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -519,8 +369,8 @@
         <div class="row" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 ">
-<!--            FIXME : Iframe de la bonne adresse-->
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d165292.9197602727!2d1.3011577356954953!3d43.57272097026203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb9e5cdfba117%3A0x5e39240c04a4bad6!2sAPICAL!5e0!3m2!1sfr!2sfr!4v1620814225203!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+<!--            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.2572900302353!2d1.3715409155562763!3d43.53867837912528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb9e5cdfba117%3A0xca997bf575957685!2s67%20Route%20de%20Francazal%2C%2031120%20Portet-sur-Garonne!5e0!3m2!1sfr!2sfr!4v1620814366337!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>-->
           </div>
 
           <div class="col-lg-6">
@@ -569,7 +419,7 @@
             <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
               <h3>Apical</h3>
               <p class="pb-3">
-                <em>LES ARBORISTES D'APICAL SONT FORMÉS, ÉQUIPÉS ET ASSURÉS POUR LA PARFAITE EXÉCUTION DE TOUS TYPES D'ABATTAGE DÉLICAT.</em>
+                <em>MY ATTITUDE OF MIND MAKES UNIQUE THINGS POSSIBLE ...</em>
               </p>
               <p>
                 67 route de Francazal, le Clos <br>
@@ -601,11 +451,11 @@
             <h4>Nos Services</h4>
             <ul>
 <!--              FIXME : MODAL-->
-              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceTaille" href="#modalServiceTaille">Taille</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Démontage</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Essouchage / Dessouchage</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Evacuation / Broyage</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Soins aux arbres</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceTaille">Taille</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceDemontage">Démontage</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceEssouchage">Essouchage / Dessouchage</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceEvacuation">Evacuation / Broyage</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a data-toggle="modal" data-target="#modalServiceSoins">Soins aux arbres</a></li>
             </ul>
           </div>
 
